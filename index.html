@@ -1,18 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+<!--En head se almacenan metadatos para poder renderizar mi pagina web-->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipos de salsa</title>
+</head>salsas
 <body>
-<h1>hola soy alex
-    <p>me gusta volar en el rio <br>estoy aqui</p>
-    <ul><li>megusta el rosa</li>
-        <li>cumlpo pulpo</li>
-        <li>no le hago zoom</li>
-    </ul>
-</h1>
+    <!--Header es una etiqueta semantica que indica que es una cabecera-->
+    <header>
+        <div style="text-align: center;">
+            <h1 style="color:red"> tipos de salsa</h1>
+            <img src="images/salsa molca.jpg" alt="Imagen de salsa" height="360px">
+            <!--Barra de navegación-->
+            <nav>
+                <ul>
+                    <!--Enlaces internos-->
+                    <li><a href="#ingredientes">ingredientes</a></li>
+                    <li><a href="#servir">molcagete</a></li>
+                    <li><a href="#licuadora">licuada</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="ingredientes">
+            <h2>salsa</h2>
+            <p style="font-size: 18px; color:brown;"> Las salsas, son adicionadas a cualquier alimento <b>su fin es el picor y sabor </b>, Manejo de los chiles: Usa guantes cuando manipules los habaneros para evitar que el picante se quede en tus manos. Lávate bien las manos después de tocarlos.</p>
+        </section>
+
+        <!-- <b> y <strong> ponen en negritas, pero una es semantica y la otra no -->
+
+        <section id="ingredientes">
+            <h2><i>ingredientes</i> para la salsa:</h2>
+            <ul>
+                <li> <h1>(ajusta según tu tolerancia al picante)</h1>3 o 4 chiles habaneros</li>
+                <li>1/2 cebolla morada o blanca</li>
+                <li>2 dientes de ajo</li>
+                <li>1/2 taza de jugo de limón</li> 
+                <li>1/2 taza de agua</li>
+                <li>1 cucharadita de sal (ajusta al gusto)</li>
+                <li>1/4 de cucharadita de comino (opcional, le da un toque extra de sabor)</li>
     
+            </ul>
+        </section>
+
+        <img src="https://comedera.com/wp-content/uploads/sites/9/2022/10/salsa-de-mango-habanero-5.jpeg?resize=1316,740&quality=80" width="350px">
+
+        <section id="salsa botella">
+            <h2>salsa de <em>botella</em></h2> <!-- <i> y <em> ponen en italica-->
+            <p>La opcion de preparar una salsa no siempre es viable por eso te presentamos los pasos para comprar una salsa:</p>
+            <ul>
+                <li>Prepárate: Lleva dinero, llaves y una bolsa si es necesario.
+                </li>
+                <li>Ve a la tienda: Camina con cuidado hasta la esquina.
+                </li>
+                <li>Compra la salsa: Busca la que necesitas y paga.
+                </li>
+                <li>Regresa a casa: Guarda la salsa y listo. 😊
+
+
+
+
+
+                </li>
+            </ul>
+        </section>
+        <!--Subrayamos con <u>-->
+
+        <img src="https://chedrauimx.vtexassets.com/arquivos/ids/38926814-800-auto?v=638670749686030000&width=800&height=auto&aspect=true" alt="Platillo casado" height="150px">
+
+
+        <!--iframe nos permite insertar otro tipo de DOC en HTML-->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cuZ9c4LTDhE?si=uUBEb_8KiVd8m1aD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form action="#" method="post"> 
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Encuentra más recetas abajo:</h3>
+        <a href="https://www.recetasnestle.com.mx/recetas/salsa-molcajeteada" target="_blank">recetario aqui</a>
+        <p>Pagina creada por: alex perez</p>
+    </footer>
 </body>
 </html>
